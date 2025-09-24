@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perjalanan Saya - Portofolio Alicia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+  <div id="progress-bar"></div>
+    <div class="cursor"></div>
+
+    
+    <nav>
+        <div class="container">
+            <a href="index.html" class="nav-logo magnetic">Alicia'sPortfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="magnetic">Home</a></li>
+                <li><a href="portfolio.html" class="active magnetic">Portfolio</a></li>
+                <li><a href="contact.html" class="magnetic">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="portfolio-main">
+        <section class="portfolio-hero">
+            <div class="container">
+                <h1 class="main-heading">Selected Works</h1>
+                <p class="description text-center">
+                    Welcome to my digital garden. Each project is a seed of an idea that has grown into a functional solution, blending analysis with a touch of creativity.
+                </p>
+            </div>
+        </section>
+
+        <section class="portfolio-gallery">
+            <div class="container">
+
+                <div class="portfolio-grid">
+                    <a href="pawsure.html" class="portfolio-card">
+                        <div class="card-image-wrapper"><img src="assets/pawsurecover.jpg" alt="PawSure Information System"></div>
+                        <div class="card-content"><h3>PawSure</h3><p>A prototype application my group and I created for the Advanced Information Analysis and Design course project.</p></div>
+                        <div class="card-tags"><span class="card-tag">Business Analysis</span><span class="card-tag">UI/UX</span><span class="card-tag">UML Diagrams</span></div>
+                        <div class="card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                    <a href="florarity.html" class="portfolio-card">
+                        <div class="card-image-wrapper"><img src="assets/florarity2.jpg" alt="Florarity Project"></div>
+                        <div class="card-content"><h3>Florarity</h3><p>A flower shop management application with database integration, developed using Java.</p></div>
+                        <div class="card-tags"><span class="card-tag">Java</span><span class="card-tag">MySQL</span></div>
+                        <div class="card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                    <a href="localfarmer.html" class="portfolio-card">
+                         <div class="card-image-wrapper"><img src="assets/localfarmer1.jpg" alt="LocalFarmer Database"></div>
+                         <div class="card-content"><h3>LocalFarmer</h3><p>A project assignment related to the database for an application connecting local farmers with consumers.</p></div>
+                         <div class="card-tags"><span class="card-tag">SQL</span><span class="card-tag">Oracle</span></div>
+                         <div class="card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                    <a href="artrevo.html" class="portfolio-card">
+                        <div class="card-image-wrapper"><img src="assets/artevocover.png" alt="Artevo Project"></div>
+                        <div class="card-content"><h3>Artevo</h3><p>A group project for the Information System Analysis and Design course, an application offering painting purchasing services.</p></div>
+                        <div class="card-tags"><span class="card-tag">UML Diagrams</span></div>
+                        <div class="card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                     <a href="webgdap.html" class="portfolio-card">
+                         <div class="card-image-wrapper"><img src="assets/gdapcover.png" alt="GDAP Company Website"></div>
+                         <div class="card-content"><h3>GDAP Website</h3><p>A website developed for GDAP (Greatwall Drilling Asia Pacific), the company where I interned.</p></div>
+                         <div class="card-tags"><span class="card-tag">HTML</span><span class="card-tag">CSS</span><span class="card-tag">JavaScript</span></div>
+                         <div class="card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                     </a>
+                     <a href="webpersonal.html" class="portfolio-card">
+                         <div class="card-image-wrapper"><img src="assets/personalcover.png" alt="Personal Website Project"></div>
+                         <div class="card-content"><h3>Personal Website</h3><p>A website that I developed with a theme that I personally like.</p></div>
+                         <div class="card-tags"><span class="card-tag">HTML</span><span class="card-tag">CSS</span><span class="card-tag">JavaScript</span></div>
+                         <div class="card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                     </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+             <div class="container">
+                 <div class="cta-container">
+                     <div class="cta-inner-content">
+                           <h2>Interested in working together?</h2>
+                           <p>Let's create something amazing together.</p>
+                           <a href="contact.html" class="btn btn-primary">Contact Me</a>
+                     </div>
+                 </div>
+            </div>
+        </section>
+    </main>
+    
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col"><h4>Alicia,</h4><p>Information Systems student with an interest in business process analysis and efficient ERP solutions.</p></div>
+            <div class="footer-col"><h4>Navigation</h4><ul><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-col"><h4>Email</h4><ul><li><a href="mailto:alicia.hisyam@binus.ac.id">alicia.hisyam@binus.ac.id</a></li></ul></div>
+            <div class="footer-col"><h4>Social Media</h4><div class="social-icons"><a href="https://linkedin.com/in/alicianasywaahisyam" target="_blank" class="magnetic"><i class="fab fa-linkedin"></i></a><a href="https://github.com/alicianasywaahisyam-cmd" target="_blank" class="magnetic"><i class="fab fa-github"></i></a><a href="https://instagram.com/alicianasywaa" target="_blank" class="magnetic"><i class="fab fa-instagram"></i></a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Alicia Nasywaa Hisyam. Designed with passion.</p></div>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    
+    <script>
+        const progressBar = document.getElementById('progress-bar');
+if (progressBar) {
+    window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollPercent = (scrollTop / scrollHeight) * 100;
+        // Baris ini yang mengubah lebar bar-nya
+        progressBar.style.width = scrollPercent + '%'; 
+    });
+}
+    const magneticElements = document.querySelectorAll('.magnetic');
+magneticElements.forEach(el => {
+    el.addEventListener('mousemove', e => {
+        const pos = el.getBoundingClientRect();
+        const x = e.clientX - pos.left - pos.width / 2;
+        const y = e.clientY - pos.top - pos.height / 2;
+        gsap.to(el, { duration: 0.5, x: x * 0.4, y: y * 0.4, ease: 'power2.out' });
+    });
+    el.addEventListener('mouseout', () => gsap.to(el, { duration: 0.5, x: 0, y: 0, ease: 'elastic.out(1, 0.3)' }));
+});
+
+const canvas = document.getElementById('particle-canvas');
+if (canvas) {
+    const ctx = canvas.getContext('2d'); let particles = []; const particleCount = 70; const colors = ["#E8A0BF", "#F4D3E2", "#FFFFFF"]; const setCanvasSize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }; class Particle { constructor() { this.x = Math.random() * canvas.width; this.y = Math.random() * canvas.height; this.radius = Math.random() * 2 + 1; this.color = colors[Math.floor(Math.random() * colors.length)]; this.velocity = { x: (Math.random() - 0.5) * 0.5, y: (Math.random() - 0.5) * 0.5 }; } draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2); ctx.fillStyle = this.color; ctx.fill(); } update() { this.x += this.velocity.x; this.y += this.velocity.y; if (this.x < 0 || this.x > canvas.width) this.velocity.x *= -1; if (this.y < 0 || this.y > canvas.height) this.velocity.y *= -1; this.draw(); } } const initParticles = () => { particles = []; for (let i = 0; i < particleCount; i++) { particles.push(new Particle()); } }; const animateParticles = () => { ctx.clearRect(0, 0, canvas.width, canvas.height); particles.forEach(p => p.update()); requestAnimationFrame(animateParticles); }; setCanvasSize(); initParticles(); animateParticles(); window.addEventListener('resize', () => { setCanvasSize(); initParticles(); });
+}
+
+    document.addEventListener('DOMContentLoaded', () => {
+        gsap.registerPlugin(ScrollTrigger, Flip);
+
+        // --- FUNGSI GLOBAL ---
+        const nav = document.querySelector('nav');
+        if (nav) {
+            window.addEventListener('scroll', () => {
+                nav.classList.toggle('scrolled', window.scrollY > 50);
+            });
+        }
+
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-links');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('toggle');
+            });
+        }
+
+        if (window.matchMedia("(pointer: fine)").matches) {
+            const cursor = document.querySelector('.cursor');
+            if (cursor) {
+                document.addEventListener('mousemove', e => gsap.to(cursor, { duration: 0.3, x: e.clientX, y: e.clientY }));
+                const hoverables = document.querySelectorAll('a, button, .portfolio-card');
+                hoverables.forEach(el => {
+                    el.addEventListener('mouseover', () => cursor.classList.add('hover'));
+                    el.addEventListener('mouseout', () => cursor.classList.remove('hover'));
+                });
+            }
+        }
+
+        // --- FUNGSI KHUSUS HALAMAN PORTFOLIO ---
+        // Pengecekan ini penting agar script hanya berjalan di halaman portfolio
+        if (document.querySelector('.portfolio-gallery')) {
+
+            // Animasi Intro
+            gsap.from('.portfolio-hero .main-heading', { duration: 1, y: 50, opacity: 0, ease: 'power3.out', delay: 0.2 });
+            gsap.from('.portfolio-hero .description', { duration: 1, y: 30, opacity: 0, ease: 'power3.out', delay: 0.4 });
+            gsap.from('.filter-btn', { duration: 0.8, y: 20, opacity: 0, stagger: 0.1, ease: 'power3.out', delay: 0.6 });
+            
+            const allItems = gsap.utils.toArray(".portfolio-card");
+            
+            // Logika Load More
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            let currentlyShown = 6;
+
+            // Sembunyikan item yang tidak perlu di awal
+            allItems.forEach((item, index) => {
+                if (index >= currentlyShown) {
+                    item.style.display = 'none';
+                }
+            });
+            // Sembunyikan tombol jika item kurang dari atau sama dengan 6
+            if (allItems.length <= currentlyShown) {
+                if(loadMoreBtn) loadMoreBtn.style.display = 'none';
+            }
+
+            if(loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    const hiddenItems = allItems.slice(currentlyShown, currentlyShown + 6);
+                    hiddenItems.forEach(item => item.style.display = 'block');
+                    gsap.from(hiddenItems, {
+                        duration: 0.8, opacity: 0, y: 50, stagger: 0.1, ease: 'power3.out'
+                    });
+                    currentlyShown += hiddenItems.length;
+                    if (currentlyShown >= allItems.length) {
+                        loadMoreBtn.style.display = 'none';
+                    }
+                });
+            }
+
+            // Logika Filter
+            const filters = document.querySelector(".portfolio-filters");
+            
+            filters.addEventListener("click", (e) => {
+                if (!e.target.matches(".filter-btn")) return;
+
+                const btn = e.target;
+                const filterValue = btn.dataset.filter;
+
+                document.querySelector(".filter-btn.active").classList.remove("active");
+                btn.classList.add("active");
+
+                // Sembunyikan tombol "Load More" saat filter aktif
+                if (loadMoreBtn) {
+                    loadMoreBtn.style.display = 'none';
+                }
+                
+                // Ambil state HANYA dari item yang sedang terlihat
+                const visibleItems = allItems.filter(item => item.style.display !== 'none' || filterValue === 'all');
+                const state = Flip.getState(visibleItems, { props: "transform,opacity" });
+                
+                // Terapkan filter
+                allItems.forEach(item => {
+                    item.style.display = (filterValue === "all" || item.dataset.category === filterValue) ? "block" : "none";
+                });
+                
+                // Reset "Load More" jika filter "Semua" dipilih lagi
+                if (filterValue === 'all') {
+                    currentlyShown = 6;
+                     allItems.forEach((item, index) => {
+                        if (index >= currentlyShown) {
+                            item.style.display = 'none';
+                        }
+                    });
+                     if (allItems.length > currentlyShown && loadMoreBtn) {
+                        loadMoreBtn.style.display = 'inline-block';
+                     }
+                }
+                
+                Flip.from(state, {
+                    duration: 0.7,
+                    scale: true,
+                    ease: "power3.inOut",
+                    stagger: 0.08,
+                    absolute: true,
+                    onEnter: elements => gsap.fromTo(elements, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.5 }),
+                    onLeave: elements => gsap.to(elements, { opacity: 0, scale: 0.8, duration: 0.5 })
+                });
+            });
+        }
+    });
+    </script>
+</body>
+</html>
